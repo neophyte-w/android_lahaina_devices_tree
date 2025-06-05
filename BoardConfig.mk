@@ -99,25 +99,25 @@ TW_INCLUDE_REPACKTOOLS := true
 ifeq ($(TW_DEVICE_VERSION),)
 TW_DEVICE_VERSION=14.0
 endif
-TW_EXTRA_LANGUAGES := true     #  添加更多国家的语言（包括亚洲语言）
+TW_EXTRA_LANGUAGES := true     #  添加更多国家的语言(包括亚洲语言)
 ifeq ($(TW_DEFAULT_LANGUAGE),)
 TW_DEFAULT_LANGUAGE := zh_CN     #  设置默认语言为简体中文
 endif
-BOARD_HAS_NO_REAL_SDCARD:= true    #  禁用sdcard分区之类的东西，如果TWRP不适合于您的Recovery分区，可能会节省一些空间。
+BOARD_HAS_NO_REAL_SDCARD:= true    #  禁用sdcard分区之类的东西,如果TWRP不适合于您的Recovery分区,可能会节省一些空间。
 TW_NO_BATT_PERCENT:= true     #  在不支持电池信息的设备上禁用电池百分比显示
 TW_CUSTOM_POWER_BUTTON:= 107     #  自定义锁屏键所对应的设备按键
 #RECOVERY_TOUCHSCREEN_SWAP_XY:= true    #  在X轴和Y轴之间交换触摸映射
 TW_MAX_BRIGHTNESS := 255 # 设置最高亮度
 TW_DEFAULT_BRIGHTNESS := 155 # 设置默认亮度
-TW_IGNORE_MISC_WIPE_DATA := true # 是否在清除 data 时忽略 misc（来自fastboot，系统等的命令）
+TW_IGNORE_MISC_WIPE_DATA := true # 是否在清除 data 时忽略 misc(来自fastboot,系统等的命令)
 TW_INCLUDE_CRYPTO := true #是否添加解密支持
 TW_INCLUDE_CRYPTO_FBE := true#是否添加解密支持[FBE]
 BOARD_USES_METADATA_PARTITION := true #元加密分区
 TW_INCLUDE_FBE_METADATA_DECRYPT := true #Metadata解密分区
-TARGET_CRYPTFS_HW_PATH := vendor/etc/fstab.qcom # 解密所需依赖的源码路径（高通机型）
+TARGET_CRYPTFS_HW_PATH := vendor/etc/fstab.qcom # 解密所需依赖的源码路径(高通机型)
 RECOVERY_SDCARD_ON_DATA := true # 设置内部存储的数据是否在 data 分区
 TW_USE_TOOLBOX := true # 是否使用 ToolBox
-AB_OTA_UPDATER := true #是否启用AB（A/B）OTA更新
+AB_OTA_UPDATER := true #是否启用AB(A/B)OTA更新
 TW_OZIP_DECRYPT_KEY := true #用于解密oZip文件的密钥
 TW_HAPTICS_TSPDRV := true #触觉反馈驱动设置
 #TW_CUSTOM_CPU_TEMP_PATH := "/sys/class/thermal/thermal_zone27/temp" #soc温度监测
