@@ -1,9 +1,9 @@
 [
   {
     "remote":"omnirom",
-    "repository": "git@github.com:example/device-oplus-RMX2202.git",
-    "target_path": "device/oplus/RMX2202",
+    "repository": "git@github.com:example/device-oplus-lahaina.git",
+    "target_path": "device/oplus/lahaina",
     "branch": "main"
-    "revision":"android-14.0"
+    "revision":"android-12.0"
   }
 ]
